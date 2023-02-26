@@ -23,14 +23,15 @@ public class ProductController {
 	
 @PostMapping("/saveProduct")
 public Product saveProduct(@RequestBody Product p) {
-	
+	System.out.println("Hello World");
 	Product pro=psi.saveProductData(p);
 	return pro;
 }
 
 @GetMapping("/getallProduct")
 public List<Product> getallProduct(){
-
+	System.out.println("Hello World");
+	System.out.println("Git Practice");
 	List<Product> pro=psi.getallProductData();
 	return pro;
 }
